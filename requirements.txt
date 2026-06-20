@@ -1,0 +1,20 @@
+# IVAO/VATSIM ATC Assistant — Python dependencies
+# Tested on Python 3.10–3.14, Windows 10/11.
+
+# Audio capture: WASAPI loopback (Windows-only fork of PyAudio)
+pyaudiowpatch>=0.2.12
+
+# Speech-to-text: faster-whisper for CPU-friendly local inference
+faster-whisper>=1.0.0
+
+# HTTP client for AI provider calls (Groq / Ollama / OpenAI-compatible)
+requests>=2.31
+
+# GUI: pywebview wraps a local webview as the desktop window
+pywebview>=5.0
+
+# Process enumeration (to capture audio from a specific app like vPilot)
+psutil>=5.9
+
+# Optional: store API keys in Windows Credential Manager instead of disk
+keyring>=24.0
